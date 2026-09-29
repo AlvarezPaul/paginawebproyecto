@@ -1,22 +1,45 @@
 body {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-image: url('juego.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
 }
 .content{
     display: grid;
     height: 30%;
-    width: 55%;
+    width: 50%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    background-color: white;
 }
-.content a{
-    grid-row: 1;
-    grid-column: 2;
+.content .titulo {
+    font-size: 2rem;    
+    color:#666;          
+    text-decoration: none; 
     text-align: center;
+    grid-row: 1;           
+    grid-column: 2;
+}
+.content a:hover {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;       
+    color: black;
+}
+.content a.titulo:hover {
+    font-size: 2rem;     
+    text-align: center;  
+    color: black;    
+    text-decoration: none;
 }
 .content ul{
     grid-row: 2;
@@ -40,28 +63,39 @@ body {
     grid-column: 2;
 }
 .ian{
-    width: 60%;
+    width: 50%;
     height: 50%;
-    flex-grow: 1; 
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center; 
+    background-color: white;
 }
 a{
     color: #999;
     text-decoration: none;
     color: #505050;
 }
-.godot{
+a img{
     width: 370px;
     height: 250px;
 }
-.bibliografia{
-    width: 370px;
-    height: 250px;
+header.content {
+    border-bottom: 2px solid #333; 
+    padding-bottom: 15px;        
+    margin-bottom: 20px;           
 }
-.propuestas{
-    width: 370px;
-    height: 250px;
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul moderno */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* Bordes completamente redondeados */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
 }
-.carpeta{
-    width: 370px;
-    height: 250px;
+.boton:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
 }
